@@ -121,7 +121,7 @@ error_reporting(E_ALL);
         <div class="registration-form">
             <h1>Welcome to Real Estate Web App</h1>
             <p>Create an account to get started.</p>
-            <form action="../stated-master/action/register_user_action.php" method="post">
+            <form action="../final/action/register_user_action.php" method="post">
                 <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
                 <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>

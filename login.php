@@ -62,7 +62,7 @@
     <h1>Task Titan</h1>
     <div class="modal_container">
         <div class="signIn" id="signIn">
-            <form action="../action/login_user_action.php" method="post">
+            <form action="../final/action/login_user_action.php" method="post">
                 <p>Sign In</p>
                 <input type="email" placeholder="Enter your Email" name="email" id="emailInput" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                 <br>

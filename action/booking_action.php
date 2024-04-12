@@ -32,8 +32,7 @@ if (isset($_POST["submit-booking"])) {
 
     // Execute the SQL query
     if ($conn->query($sql) === TRUE) {
-        echo "Successful";
-        // header("Location:../login.php");
+         header("Location: ../index.php?msg=Successfully booked.");
         $message = '
             <h3 align="center">Application Details</h3>
             <table border="1" width="100%" cellpadding="5" cellspacing="5">
@@ -91,8 +90,12 @@ if (isset($_POST["submit-booking"])) {
             $message = '<div class="alert alert-danger">There is an error: ' . $mail->ErrorInfo . '</div>';
         }
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        header("Location: ../index.php?msg=Not successful.");
     }
+    
+    // } else {
+    //     echo "Error: " . $sql . "<br>" . $conn->error;
+    // }
 
     // Close the database connection
     $conn->close();

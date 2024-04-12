@@ -4,9 +4,9 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 //include './core.php';
 $user_id = $_SESSION['user_id'];
 
@@ -47,8 +47,9 @@ if (isset($_POST["edit"])) {
     // var_dump($conn);
     // var_dump($sql);
     if (mysqli_query($conn, $sql)) {
-        echo "Successful";
+         header("Location: ../index.php?msg=Successfully updated.");
+    } else {
+        header("Location: ../index.php?msg=Not successful.");
     }
-
     $conn->close();
 }

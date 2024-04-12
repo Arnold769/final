@@ -23,9 +23,9 @@ if (isset($_POST["delete"])) {
 
     // Execute the query
     if (mysqli_query($conn, $sql)) {
-        echo "Record deleted successfully";
+        header("Location: ../action/delete_booking_action.php?msg=Successfully deleted.");
     } else {
-        echo "Error deleting record: " . mysqli_error($conn);
+        header("Location: ../action/delete_booking_action.php?msg=Not successful.");
     }
 
     $conn->close();

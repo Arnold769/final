@@ -692,7 +692,7 @@ include("core.php");
             echo '</form>';
 
             // Form for delete action
-            echo '<form action="../stated-master/action/delete_booking_action.php" method="post">';
+            echo '<form action="../final/action/delete_booking_action.php" method="post">';
             echo '<input type="hidden" name="booking_id" value="' . $booking['booking_id'] . '">'; // Add a hidden input field for booking_id
             echo '<td><button type="submit" class="btn btn-primary btn-sm" name="delete">Delete</button></td>';
             echo '</form>';

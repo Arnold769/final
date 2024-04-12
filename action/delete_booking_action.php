@@ -1,5 +1,5 @@
 <?php
-// include_once('../connections.php');
+ include_once('../connections.php');
 if (!isset($_SESSION)) {
     session_start();
 }

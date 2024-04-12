@@ -23,5 +23,7 @@ if (isset($_POST['signIn'])) {
     } else {
         echo "User not found";
     }
+} else {
+    echo "Issue";
 }
 ?>

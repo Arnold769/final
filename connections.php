@@ -1,6 +1,6 @@
 <?php
 define("DBHOST", "localhost");
-define("DBNAME", "RealEstateDevelopmentAgency");
+define("DBNAME", "FinalProject");
 define("DBUSER", "root");
 define("DBPASS", "");
 

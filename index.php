@@ -790,6 +790,17 @@ include("core.php");
 
   <script src="js/main.js"></script>
 
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const message = urlParams.get('msg');
+    if (message) {
+        swal("Notice", message, "info");
+    }
+});
+</script>
+
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Titan</title>
+    <title>El Virtues Construction Ltd</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap' rel='stylesheet'>
     <style>
@@ -59,7 +59,7 @@
 
 <body>
 
-    <h1>Task Titan</h1>
+    <h1>El Virtues Construction Ltd</h1>
     <div class="modal_container">
         <div class="signIn" id="signIn">
             <form action="../final/action/login_user_action.php" method="post">

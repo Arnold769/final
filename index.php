@@ -233,7 +233,7 @@ include("core.php");
 
   <section class="site-section" id="apply-for-contract-section" name="apply-for-contract-section">
 
-    <form action="../stated-master/action/script.php" method="post" class="p-5 bg-white" enctype="multipart/form-data">
+    <form action="../final/action/script.php" method="post" class="p-5 bg-white" enctype="multipart/form-data">
 
       <h2 class="h4 text-black mb-5">Apply for Contract</h2>
 
@@ -482,7 +482,7 @@ include("core.php");
 
 
   <section class="site-section" id="book-an-apartment-tour">
-    <form action="../stated-master/action/booking_action.php" method="post" class="p-5 bg-white" enctype="multipart/form-data">
+    <form action="../final/action/booking_action.php" method="post" class="p-5 bg-white" enctype="multipart/form-data">
 
       <h2 class="h4 text-black mb-5">Schedule an apartment tour</h2>
 
@@ -573,7 +573,7 @@ include("core.php");
 
 
 
-          <form action="../stated-master/action/contact_action.php" method="post" class="p-5 bg-white">
+          <form action="../final/action/contact_action.php" method="post" class="p-5 bg-white">
 
             <h2 class="h4 text-black mb-5">Contact Form</h2>
 
@@ -663,7 +663,7 @@ include("core.php");
           $bookings = fetchBookings($user_id); // Replace with your function to fetch bookings
           foreach ($bookings as $booking) {
             echo '<tr>';
-            echo '<form action="../stated-master/action/edit_booking_action.php" method="post">';
+            echo '<form action="../final/action/edit_booking_action.php" method="post">';
             echo '<input type="hidden" name="booking_id" value="' . $booking['booking_id'] . '">'; // Add a hidden input field for booking_id
             echo '<td><input type="text" name="fname" class="form-control" value="' . $booking['first_name'] . '"></td>';
             echo '<td><input type="text" name="lname" class="form-control" value="' . $booking['last_name'] . '"></td>';
